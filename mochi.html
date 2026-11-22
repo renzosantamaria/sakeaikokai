@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>G · Mochi – Sake Aikokai designförslag</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFF5F7}
+a{color:#8E3562}a:hover{color:#5E2040}
+@keyframes mochi-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes mochi-clink-l{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(12deg) translateX(8px)}}
+@keyframes mochi-clink-r{0%,100%{transform:rotate(4deg)}50%{transform:rotate(-12deg) translateX(-8px)}}
+@keyframes mochi-twinkle{0%,100%{opacity:.25;transform:scale(.6)}50%{opacity:1;transform:scale(1.15)}}
+@keyframes mochi-fall{0%{transform:translateY(-40px) rotate(0deg);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(540px) rotate(320deg);opacity:0}}
+@keyframes mochi-pop{0%{transform:scale(.5);opacity:0}70%{transform:scale(1.06)}100%{transform:scale(1);opacity:1}}
+@keyframes mochi-wiggle{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+.mochi-lift{transition:transform .25s ease}
+.mochi-lift:hover{transform:translateY(-8px) rotate(-1.5deg)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+<style>
+.dc-back{position:fixed;left:16px;bottom:16px;z-index:50;background:#111;color:#fff!important;text-decoration:none;font:600 14px/1 system-ui,sans-serif;padding:14px 18px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.dc-back:hover{background:#333;color:#fff!important}
+</style>
+</head>
+<body>
+<div id="root"><div style="font-family: 'M PLUS Rounded 1c', system-ui, sans-serif; color: #4A3558; background: #FFF5F7; width: 100%">
+
+<header style="max-width: 1240px; margin: 0 auto; padding: 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
+<a href="#" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #4A3558">
+<svg width="50" height="50" viewBox="0 0 90 70" aria-hidden="true" style="animation: mochi-wiggle 3s ease-in-out infinite"><path d="M10 10 H80 L70 54 Q68 64 58 64 H32 Q22 64 20 54 Z" fill="#FFC8DD" stroke="#4A3558" stroke-width="4" stroke-linejoin="round"></path><circle cx="35" cy="32" r="3.5" fill="#4A3558"></circle><circle cx="55" cy="32" r="3.5" fill="#4A3558"></circle><path d="M39 41 Q45 47 51 41" fill="none" stroke="#4A3558" stroke-width="3.5" stroke-linecap="round"></path></svg>
+<span style="font-weight: 800; font-size: 26px">Sake Aikokai</span>
+</a>
+<nav aria-label="Huvudmeny" style="display: flex; flex-wrap: wrap; align-items: center; gap: 22px; font-size: 16px; font-weight: 700">
+<a href="#nyheter" style="color: #4A3558; text-decoration: none">Nyheter</a>
+<a href="#evenemang" style="color: #4A3558; text-decoration: none">Evenemang</a>
+<a href="#omikuji" style="color: #4A3558; text-decoration: none">Dagens lott</a>
+<a href="#" style="background: #4A3558; color: #FFFFFF; text-decoration: none; padding: 12px 22px; border-radius: 999px">Bli medlem</a>
+</nav>
+</header>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 24px 24px 80px; display: flex; flex-wrap: wrap; align-items: center; gap: 40px">
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<span style="align-self: flex-start; background: #BDE6D3; border-radius: 999px; padding: 8px 18px; font-weight: 700; font-size: 15px">Hej sakevän! かんぱい</span>
+<h1 style="margin: 0; font-weight: 800; font-size: clamp(46px, 6.5vw, 86px); line-height: 1.05; letter-spacing: -1px">Mjuka kvällar, <span style="background: #FFC8DD; border-radius: 24px; padding: 0 14px">söta</span> skålar.</h1>
+<p style="margin: 0; font-size: 20px; line-height: 1.6; max-width: 500px">Sveriges gulligaste hörn för sakeälskare. Titta in varje dag – det finns alltid något nytt att upptäcka.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#omikuji" class="mochi-lift" style="background: #4A3558; color: #FFFFFF; text-decoration: none; padding: 17px 28px; border-radius: 999px; font-weight: 700; font-size: 17px">Dra dagens lott</a>
+<a href="#evenemang" class="mochi-lift" style="background: #D7C8F5; color: #4A3558; text-decoration: none; padding: 17px 28px; border-radius: 999px; font-weight: 700; font-size: 17px">Kommande träffar</a>
+</div>
+</div>
+
+<div aria-hidden="true" style="flex: 1 1 420px; min-width: 0; position: relative; height: 520px; overflow: hidden; border-radius: 48px; background: #FFE3EC">
+<div style="position: absolute; left: 50%; top: 50%; width: 380px; height: 380px; margin: -190px 0 0 -190px; border-radius: 50%; background: #FFF5F7"></div>
+
+<svg width="22" height="22" viewBox="0 0 22 22" style="position: absolute; top: 0; left: 6%; animation: mochi-fall 7s linear 0s infinite"><path d="M11 2 Q19 8 11 20 Q3 8 11 2 Z" fill="#FFC8DD"></path></svg>
+
+<svg width="22" height="22" viewBox="0 0 22 22" style="position: absolute; top: 0; left: 17%; animation: mochi-fall 8.5s linear 0.9s infinite"><path d="M11 2 Q19 8 11 20 Q3 8 11 2 Z" fill="#FFFFFF"></path></svg>
+
+<svg width="22" height="22" viewBox="0 0 22 22" style="position: absolute; top: 0; left: 29%; animation: mochi-fall 10s linear 1.8s infinite"><path d="M11 2 Q19 8 11 20 Q3 8 11 2 Z" fill="#D7C8F5"></path></svg>
+
+<svg width="22" height="22" viewBox="0 0 22 22" style="position: absolute; top: 0; left: 41%; animation: mochi-fall 11.5s linear 2.7s infinite"><path d="M11 2 Q19 8 11 20 Q3 8 11 2 Z" fill="#FFC8DD"></path></svg>
+
+<svg width="22" height="22" viewBox="0 0 22 22" style="position: absolute; top: 0; left: 54%; animation: mochi-fall 7s linear 3.6s infinite"><path d="M11 2 Q19 8 11 20 Q3 8 11 2 Z" fill="#FFC8DD"></path></svg>
+
+<svg width="22" height="22" viewBox="0 0 22 22" style="position: absolute; top: 0; left: 66%; animation: mochi-fall 8.5s linear 4.5s infinite"><path d="M11 2 Q19 8 11 20 Q3 8 11 2 Z" fill="#FFFFFF"></path></svg>
+
+<svg width="22" height="22" viewBox="0 0 22 22" style="position: absolute; top: 0; left: 79%; animation: mochi-fall 10s linear 5.4s infinite"><path d="M11 2 Q19 8 11 20 Q3 8 11 2 Z" fill="#D7C8F5"></path></svg>
+
+<svg width="22" height="22" viewBox="0 0 22 22" style="position: absolute; top: 0; left: 90%; animation: mochi-fall 11.5s linear 6.3s infinite"><path d="M11 2 Q19 8 11 20 Q3 8 11 2 Z" fill="#FFC8DD"></path></svg>
+
+<svg width="180" height="255" viewBox="0 0 120 170" style="position: absolute; left: 50%; top: 96px; margin-left: -90px; animation: mochi-bob 3.6s ease-in-out infinite">
+<rect x="45" y="6" width="30" height="22" rx="8" fill="#D7C8F5" stroke="#4A3558" stroke-width="4"></rect>
+<path d="M42 28 H78 Q102 52 102 82 V146 Q102 162 86 162 H34 Q18 162 18 146 V82 Q18 52 42 28 Z" fill="#FFFFFF" stroke="#4A3558" stroke-width="4" stroke-linejoin="round"></path>
+<path d="M18 112 H102 V146 Q102 162 86 162 H34 Q18 162 18 146 Z" fill="#BDE6D3" stroke="#4A3558" stroke-width="4" stroke-linejoin="round"></path>
+<circle cx="46" cy="80" r="5" fill="#4A3558"></circle><circle cx="74" cy="80" r="5" fill="#4A3558"></circle>
+<path d="M50 90 Q60 100 70 90" fill="none" stroke="#4A3558" stroke-width="4" stroke-linecap="round"></path>
+<circle cx="36" cy="90" r="7" fill="#FFC8DD"></circle><circle cx="84" cy="90" r="7" fill="#FFC8DD"></circle>
+</svg>
+<svg width="110" height="86" viewBox="0 0 90 70" style="position: absolute; left: 7%; bottom: 60px; transform-origin: 50% 100%; animation: mochi-clink-l 2.4s ease-in-out infinite"><path d="M10 10 H80 L70 54 Q68 64 58 64 H32 Q22 64 20 54 Z" fill="#FFE9A8" stroke="#4A3558" stroke-width="4" stroke-linejoin="round"></path><circle cx="35" cy="32" r="3.5" fill="#4A3558"></circle><circle cx="55" cy="32" r="3.5" fill="#4A3558"></circle><path d="M39 41 Q45 47 51 41" fill="none" stroke="#4A3558" stroke-width="3.5" stroke-linecap="round"></path></svg>
+<svg width="110" height="86" viewBox="0 0 90 70" style="position: absolute; right: 7%; bottom: 60px; transform-origin: 50% 100%; animation: mochi-clink-r 2.4s ease-in-out infinite"><path d="M10 10 H80 L70 54 Q68 64 58 64 H32 Q22 64 20 54 Z" fill="#FFC8DD" stroke="#4A3558" stroke-width="4" stroke-linejoin="round"></path><path d="M31 30 Q35 34 39 30" fill="none" stroke="#4A3558" stroke-width="3.5" stroke-linecap="round"></path><path d="M51 30 Q55 34 59 30" fill="none" stroke="#4A3558" stroke-width="3.5" stroke-linecap="round"></path><path d="M39 41 Q45 47 51 41" fill="none" stroke="#4A3558" stroke-width="3.5" stroke-linecap="round"></path></svg>
+
+<svg width="26" height="26" viewBox="0 0 26 26" style="position: absolute; left: 12%; top: 14%; animation: mochi-twinkle 2.2s ease-in-out 0s infinite"><path d="M13 1 L16 10 L25 13 L16 16 L13 25 L10 16 L1 13 L10 10 Z" fill="#FFD166"></path></svg>
+
+<svg width="26" height="26" viewBox="0 0 26 26" style="position: absolute; left: 82%; top: 18%; animation: mochi-twinkle 2.2s ease-in-out 0.6s infinite"><path d="M13 1 L16 10 L25 13 L16 16 L13 25 L10 16 L1 13 L10 10 Z" fill="#FFD166"></path></svg>
+
+<svg width="26" height="26" viewBox="0 0 26 26" style="position: absolute; left: 74%; top: 52%; animation: mochi-twinkle 2.2s ease-in-out 1.1s infinite"><path d="M13 1 L16 10 L25 13 L16 16 L13 25 L10 16 L1 13 L10 10 Z" fill="#FFD166"></path></svg>
+
+<svg width="26" height="26" viewBox="0 0 26 26" style="position: absolute; left: 18%; top: 48%; animation: mochi-twinkle 2.2s ease-in-out 1.5s infinite"><path d="M13 1 L16 10 L25 13 L16 16 L13 25 L10 16 L1 13 L10 10 Z" fill="#FFD166"></path></svg>
+
+<svg width="26" height="26" viewBox="0 0 26 26" style="position: absolute; left: 48%; top: 8%; animation: mochi-twinkle 2.2s ease-in-out 0.3s infinite"><path d="M13 1 L16 10 L25 13 L16 16 L13 25 L10 16 L1 13 L10 10 Z" fill="#FFD166"></path></svg>
+
+</div>
+</section>
+
+<section id="omikuji" style="max-width: 1240px; margin: 0 auto; padding: 0 24px 80px">
+<div style="background: #D7C8F5; border-radius: 48px; padding: clamp(28px, 5vw, 60px); display: flex; flex-wrap: wrap; align-items: center; gap: 40px">
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<span style="font-weight: 700; font-size: 14px; letter-spacing: 2px; text-transform: uppercase">Ny varje dag</span>
+<h2 style="margin: 0; font-weight: 800; font-size: 48px; line-height: 1.1">Dagens sake-omikuji</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6">Dra en lyckolott som på ett japanskt tempel – och få ett saketips på köpet.</p>
+<button type="button" class="mochi-lift" style="align-self: flex-start; background: #4A3558; color: #FFFFFF; border: 0; padding: 17px 30px; border-radius: 999px; font-weight: 700; font-size: 17px; font-family: inherit; cursor: pointer; min-height: 48px">Dra en lott</button>
+</div>
+<div style="flex: 1 1 340px; min-width: 0; min-height: 250px; display: flex; align-items: center; justify-content: center">
+
+<div aria-hidden="true" style="width: 150px; height: 220px; background: #FFFFFF; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 80px; font-weight: 800; color: #D7C8F5; animation: mochi-wiggle 2s ease-in-out infinite">?</div>
+
+
+</div>
+</div>
+</section>
+
+<section id="evenemang" style="max-width: 1240px; margin: 0 auto; padding: 16px 24px 64px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 36px">
+<h2 style="margin: 0; font-weight: 800; font-size: 52px">Kommande träffar</h2>
+<a href="#" style="font-weight: 700">Hela kalendern →</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+
+<a href="#" class="mochi-lift" style="flex: 1 1 250px; min-width: 0; background: #FFC8DD; color: #4A3558; text-decoration: none; border-radius: 36px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; background: #FFFFFF; border-radius: 20px; padding: 10px 16px; display: flex; flex-direction: column; align-items: center">
+<span style="font-weight: 800; font-size: 32px; line-height: 1">12</span>
+<span style="font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase">Dec</span>
+</span>
+<span style="font-weight: 700; font-size: 13px; letter-spacing: 1px; text-transform: uppercase">Provning</span>
+<span style="font-weight: 800; font-size: 24px; line-height: 1.2">Vintersake &amp; varm kan-zake</span>
+<span style="font-size: 15px; margin-top: auto">[PLATS], Stockholm</span>
+</a>
+
+<a href="#" class="mochi-lift" style="flex: 1 1 250px; min-width: 0; background: #BDE6D3; color: #4A3558; text-decoration: none; border-radius: 36px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; background: #FFFFFF; border-radius: 20px; padding: 10px 16px; display: flex; flex-direction: column; align-items: center">
+<span style="font-weight: 800; font-size: 32px; line-height: 1">18</span>
+<span style="font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase">Jan</span>
+</span>
+<span style="font-weight: 700; font-size: 13px; letter-spacing: 1px; text-transform: uppercase">Middag</span>
+<span style="font-weight: 800; font-size: 24px; line-height: 1.2">Nyårsträff med izakaya-meny</span>
+<span style="font-size: 15px; margin-top: auto">[PLATS], Stockholm</span>
+</a>
+
+<a href="#" class="mochi-lift" style="flex: 1 1 250px; min-width: 0; background: #FFE9A8; color: #4A3558; text-decoration: none; border-radius: 36px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; background: #FFFFFF; border-radius: 20px; padding: 10px 16px; display: flex; flex-direction: column; align-items: center">
+<span style="font-weight: 800; font-size: 32px; line-height: 1">06</span>
+<span style="font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase">Feb</span>
+</span>
+<span style="font-weight: 700; font-size: 13px; letter-spacing: 1px; text-transform: uppercase">Kurs</span>
+<span style="font-weight: 800; font-size: 24px; line-height: 1.2">Nybörjarkväll – sakens grunder</span>
+<span style="font-size: 15px; margin-top: auto">[PLATS], Göteborg</span>
+</a>
+
+<a href="#" class="mochi-lift" style="flex: 1 1 250px; min-width: 0; background: #D7C8F5; color: #4A3558; text-decoration: none; border-radius: 36px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; background: #FFFFFF; border-radius: 20px; padding: 10px 16px; display: flex; flex-direction: column; align-items: center">
+<span style="font-weight: 800; font-size: 32px; line-height: 1">14</span>
+<span style="font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase">Mar</span>
+</span>
+<span style="font-weight: 700; font-size: 13px; letter-spacing: 1px; text-transform: uppercase">Träff</span>
+<span style="font-weight: 800; font-size: 24px; line-height: 1.2">Hanami-picknick med sparkling sake</span>
+<span style="font-size: 15px; margin-top: auto">[PLATS], Stockholm</span>
+</a>
+
+</div>
+</section>
+
+<section id="nyheter" style="max-width: 1240px; margin: 0 auto; padding: 32px 24px 88px">
+<h2 style="margin: 0 0 36px; font-weight: 800; font-size: 52px">Nytt &amp; gott</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+
+<article class="mochi-lift" style="flex: 1 1 330px; min-width: 0; background: #FFFFFF; border-radius: 36px; overflow: hidden; display: flex; flex-direction: column">
+<div role="img" aria-label="Bildplats" style="height: 220px; background: #FFC8DD; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box; font-weight: 700; font-size: 14px">[BILD]</div>
+<div style="padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<span style="align-self: flex-start; background: #FFC8DD; border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 700">Bryggerier</span>
+<h3 style="margin: 0; font-weight: 800; font-size: 24px; line-height: 1.25">Årets första namazake har landat i Sverige</h3>
+</div>
+</article>
+
+<article class="mochi-lift" style="flex: 1 1 330px; min-width: 0; background: #FFFFFF; border-radius: 36px; overflow: hidden; display: flex; flex-direction: column">
+<div role="img" aria-label="Bildplats" style="height: 220px; background: #BDE6D3; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box; font-weight: 700; font-size: 14px">[BILD]</div>
+<div style="padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<span style="align-self: flex-start; background: #BDE6D3; border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 700">Guide</span>
+<h3 style="margin: 0; font-weight: 800; font-size: 24px; line-height: 1.25">Junmai, ginjo, daiginjo – vad betyder etiketten?</h3>
+</div>
+</article>
+
+<article class="mochi-lift" style="flex: 1 1 330px; min-width: 0; background: #FFFFFF; border-radius: 36px; overflow: hidden; display: flex; flex-direction: column">
+<div role="img" aria-label="Bildplats" style="height: 220px; background: #FFE9A8; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box; font-weight: 700; font-size: 14px">[BILD]</div>
+<div style="padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<span style="align-self: flex-start; background: #FFE9A8; border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 700">Mat &amp; sake</span>
+<h3 style="margin: 0; font-weight: 800; font-size: 24px; line-height: 1.25">Sake till julbordet: fem kombinationer</h3>
+</div>
+</article>
+
+</div>
+</section>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 0 24px 72px">
+<div style="background: #BDE6D3; border-radius: 48px; padding: clamp(28px, 5vw, 60px); display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+<h2 style="margin: 0; flex: 1 1 400px; font-weight: 800; font-size: 44px; line-height: 1.1">Ett litet brev med stora skålar.</h2>
+<form style="flex: 1 1 400px; min-width: 0; display: flex; flex-wrap: wrap; gap: 12px">
+<label for="mochi-email" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">E-postadress</label>
+<input id="mochi-email" type="email" placeholder="din@epost.se" style="flex: 1 1 240px; min-width: 0; padding: 17px 22px; border-radius: 999px; border: 0; font-size: 16px; font-family: inherit">
+<button type="submit" style="background: #4A3558; color: #FFFFFF; border: 0; padding: 17px 28px; border-radius: 999px; font-weight: 700; font-size: 16px; font-family: inherit; cursor: pointer">Prenumerera</button>
+</form>
+</div>
+</section>
+
+<footer style="max-width: 1240px; margin: 0 auto; padding: 24px 24px 56px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; font-size: 14px; font-weight: 500">
+<span style="font-weight: 800; font-size: 22px">Sake Aikokai</span>
+<span>[KONTAKT-E-POST] · Instagram · Facebook</span>
+<span>Njut av sake med måtta.</span>
+</footer>
+</div></div>
+<a class="dc-back" href="./">← Alla förslag</a>
+<script type="text/x-template" id="tpl"><div style="font-family: 'M PLUS Rounded 1c', system-ui, sans-serif; color: #4A3558; background: #FFF5F7; width: 100%">
+
+<header style="max-width: 1240px; margin: 0 auto; padding: 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
+<a href="#" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #4A3558">
+<svg width="50" height="50" viewBox="0 0 90 70" aria-hidden="true" style="animation: mochi-wiggle 3s ease-in-out infinite"><path d="M10 10 H80 L70 54 Q68 64 58 64 H32 Q22 64 20 54 Z" fill="#FFC8DD" stroke="#4A3558" stroke-width="4" stroke-linejoin="round"></path><circle cx="35" cy="32" r="3.5" fill="#4A3558"></circle><circle cx="55" cy="32" r="3.5" fill="#4A3558"></circle><path d="M39 41 Q45 47 51 41" fill="none" stroke="#4A3558" stroke-width="3.5" stroke-linecap="round"></path></svg>
+<span style="font-weight: 800; font-size: 26px">Sake Aikokai</span>
+</a>
+<nav aria-label="Huvudmeny" style="display: flex; flex-wrap: wrap; align-items: center; gap: 22px; font-size: 16px; font-weight: 700">
+<a href="#nyheter" style="color: #4A3558; text-decoration: none">Nyheter</a>
+<a href="#evenemang" style="color: #4A3558; text-decoration: none">Evenemang</a>
+<a href="#omikuji" style="color: #4A3558; text-decoration: none">Dagens lott</a>
+<a href="#" style="background: #4A3558; color: #FFFFFF; text-decoration: none; padding: 12px 22px; border-radius: 999px">Bli medlem</a>
+</nav>
+</header>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 24px 24px 80px; display: flex; flex-wrap: wrap; align-items: center; gap: 40px">
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<span style="align-self: flex-start; background: #BDE6D3; border-radius: 999px; padding: 8px 18px; font-weight: 700; font-size: 15px">Hej sakevän! かんぱい</span>
+<h1 style="margin: 0; font-weight: 800; font-size: clamp(46px, 6.5vw, 86px); line-height: 1.05; letter-spacing: -1px">Mjuka kvällar, <span style="background: #FFC8DD; border-radius: 24px; padding: 0 14px">söta</span> skålar.</h1>
+<p style="margin: 0; font-size: 20px; line-height: 1.6; max-width: 500px">Sveriges gulligaste hörn för sakeälskare. Titta in varje dag – det finns alltid något nytt att upptäcka.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#omikuji" class="mochi-lift" style="background: #4A3558; color: #FFFFFF; text-decoration: none; padding: 17px 28px; border-radius: 999px; font-weight: 700; font-size: 17px">Dra dagens lott</a>
+<a href="#evenemang" class="mochi-lift" style="background: #D7C8F5; color: #4A3558; text-decoration: none; padding: 17px 28px; border-radius: 999px; font-weight: 700; font-size: 17px">Kommande träffar</a>
+</div>
+</div>
+
+<div aria-hidden="true" style="flex: 1 1 420px; min-width: 0; position: relative; height: 520px; overflow: hidden; border-radius: 48px; background: #FFE3EC">
+<div style="position: absolute; left: 50%; top: 50%; width: 380px; height: 380px; margin: -190px 0 0 -190px; border-radius: 50%; background: #FFF5F7"></div>
+<sc-for list="{{petals}}" as="p" hint-placeholder-count="8">
+<svg width="22" height="22" viewBox="0 0 22 22" style="position: absolute; top: 0; left: {{p.left}}; animation: mochi-fall {{p.dur}} linear {{p.delay}} infinite"><path d="M11 2 Q19 8 11 20 Q3 8 11 2 Z" fill="{{p.color}}"></path></svg>
+</sc-for>
+<svg width="180" height="255" viewBox="0 0 120 170" style="position: absolute; left: 50%; top: 96px; margin-left: -90px; animation: mochi-bob 3.6s ease-in-out infinite">
+<rect x="45" y="6" width="30" height="22" rx="8" fill="#D7C8F5" stroke="#4A3558" stroke-width="4"></rect>
+<path d="M42 28 H78 Q102 52 102 82 V146 Q102 162 86 162 H34 Q18 162 18 146 V82 Q18 52 42 28 Z" fill="#FFFFFF" stroke="#4A3558" stroke-width="4" stroke-linejoin="round"></path>
+<path d="M18 112 H102 V146 Q102 162 86 162 H34 Q18 162 18 146 Z" fill="#BDE6D3" stroke="#4A3558" stroke-width="4" stroke-linejoin="round"></path>
+<circle cx="46" cy="80" r="5" fill="#4A3558"></circle><circle cx="74" cy="80" r="5" fill="#4A3558"></circle>
+<path d="M50 90 Q60 100 70 90" fill="none" stroke="#4A3558" stroke-width="4" stroke-linecap="round"></path>
+<circle cx="36" cy="90" r="7" fill="#FFC8DD"></circle><circle cx="84" cy="90" r="7" fill="#FFC8DD"></circle>
+</svg>
+<svg width="110" height="86" viewBox="0 0 90 70" style="position: absolute; left: 7%; bottom: 60px; transform-origin: 50% 100%; animation: mochi-clink-l 2.4s ease-in-out infinite"><path d="M10 10 H80 L70 54 Q68 64 58 64 H32 Q22 64 20 54 Z" fill="#FFE9A8" stroke="#4A3558" stroke-width="4" stroke-linejoin="round"></path><circle cx="35" cy="32" r="3.5" fill="#4A3558"></circle><circle cx="55" cy="32" r="3.5" fill="#4A3558"></circle><path d="M39 41 Q45 47 51 41" fill="none" stroke="#4A3558" stroke-width="3.5" stroke-linecap="round"></path></svg>
+<svg width="110" height="86" viewBox="0 0 90 70" style="position: absolute; right: 7%; bottom: 60px; transform-origin: 50% 100%; animation: mochi-clink-r 2.4s ease-in-out infinite"><path d="M10 10 H80 L70 54 Q68 64 58 64 H32 Q22 64 20 54 Z" fill="#FFC8DD" stroke="#4A3558" stroke-width="4" stroke-linejoin="round"></path><path d="M31 30 Q35 34 39 30" fill="none" stroke="#4A3558" stroke-width="3.5" stroke-linecap="round"></path><path d="M51 30 Q55 34 59 30" fill="none" stroke="#4A3558" stroke-width="3.5" stroke-linecap="round"></path><path d="M39 41 Q45 47 51 41" fill="none" stroke="#4A3558" stroke-width="3.5" stroke-linecap="round"></path></svg>
+<sc-for list="{{sparkles}}" as="s" hint-placeholder-count="5">
+<svg width="26" height="26" viewBox="0 0 26 26" style="position: absolute; left: {{s.left}}; top: {{s.top}}; animation: mochi-twinkle 2.2s ease-in-out {{s.delay}} infinite"><path d="M13 1 L16 10 L25 13 L16 16 L13 25 L10 16 L1 13 L10 10 Z" fill="#FFD166"></path></svg>
+</sc-for>
+</div>
+</section>
+
+<section id="omikuji" style="max-width: 1240px; margin: 0 auto; padding: 0 24px 80px">
+<div style="background: #D7C8F5; border-radius: 48px; padding: clamp(28px, 5vw, 60px); display: flex; flex-wrap: wrap; align-items: center; gap: 40px">
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<span style="font-weight: 700; font-size: 14px; letter-spacing: 2px; text-transform: uppercase">Ny varje dag</span>
+<h2 style="margin: 0; font-weight: 800; font-size: 48px; line-height: 1.1">Dagens sake-omikuji</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6">Dra en lyckolott som på ett japanskt tempel – och få ett saketips på köpet.</p>
+<button type="button" onClick="{{draw}}" class="mochi-lift" style="align-self: flex-start; background: #4A3558; color: #FFFFFF; border: 0; padding: 17px 30px; border-radius: 999px; font-weight: 700; font-size: 17px; font-family: inherit; cursor: pointer; min-height: 48px">{{drawLabel}}</button>
+</div>
+<div style="flex: 1 1 340px; min-width: 0; min-height: 250px; display: flex; align-items: center; justify-content: center">
+<sc-if value="{{notDrawn}}" hint-placeholder-val="{{true}}">
+<div aria-hidden="true" style="width: 150px; height: 220px; background: #FFFFFF; border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 80px; font-weight: 800; color: #D7C8F5; animation: mochi-wiggle 2s ease-in-out infinite">?</div>
+</sc-if>
+<sc-if value="{{drawn}}" hint-placeholder-val="{{false}}">
+<div role="status" style="background: #FFFFFF; border-radius: 28px; padding: 32px; text-align: center; display: flex; flex-direction: column; gap: 10px; max-width: 360px; animation: mochi-pop .5s ease-out both">
+<span style="font-size: 64px; font-weight: 800; line-height: 1; color: #8E3562">{{fortune.kanji}}</span>
+<span style="font-weight: 800; font-size: 24px">{{fortune.name}}</span>
+<span style="font-size: 17px; line-height: 1.5">{{fortune.tip}}</span>
+<span style="font-size: 14px; font-weight: 700; background: #FFE9A8; border-radius: 999px; padding: 8px 14px; align-self: center">Kom tillbaka imorgon för en ny lott</span>
+</div>
+</sc-if>
+</div>
+</div>
+</section>
+
+<section id="evenemang" style="max-width: 1240px; margin: 0 auto; padding: 16px 24px 64px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 36px">
+<h2 style="margin: 0; font-weight: 800; font-size: 52px">Kommande träffar</h2>
+<a href="#" style="font-weight: 700">Hela kalendern →</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<sc-for list="{{events}}" as="ev" hint-placeholder-count="4">
+<a href="#" class="mochi-lift" style="flex: 1 1 250px; min-width: 0; background: {{ev.bg}}; color: #4A3558; text-decoration: none; border-radius: 36px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; background: #FFFFFF; border-radius: 20px; padding: 10px 16px; display: flex; flex-direction: column; align-items: center">
+<span style="font-weight: 800; font-size: 32px; line-height: 1">{{ev.day}}</span>
+<span style="font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase">{{ev.month}}</span>
+</span>
+<span style="font-weight: 700; font-size: 13px; letter-spacing: 1px; text-transform: uppercase">{{ev.kind}}</span>
+<span style="font-weight: 800; font-size: 24px; line-height: 1.2">{{ev.title}}</span>
+<span style="font-size: 15px; margin-top: auto">{{ev.place}}</span>
+</a>
+</sc-for>
+</div>
+</section>
+
+<section id="nyheter" style="max-width: 1240px; margin: 0 auto; padding: 32px 24px 88px">
+<h2 style="margin: 0 0 36px; font-weight: 800; font-size: 52px">Nytt &amp; gott</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<sc-for list="{{news}}" as="n" hint-placeholder-count="3">
+<article class="mochi-lift" style="flex: 1 1 330px; min-width: 0; background: #FFFFFF; border-radius: 36px; overflow: hidden; display: flex; flex-direction: column">
+<div role="img" aria-label="Bildplats" style="height: 220px; background: {{n.bg}}; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box; font-weight: 700; font-size: 14px">[BILD]</div>
+<div style="padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<span style="align-self: flex-start; background: {{n.bg}}; border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 700">{{n.tag}}</span>
+<h3 style="margin: 0; font-weight: 800; font-size: 24px; line-height: 1.25">{{n.title}}</h3>
+</div>
+</article>
+</sc-for>
+</div>
+</section>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 0 24px 72px">
+<div style="background: #BDE6D3; border-radius: 48px; padding: clamp(28px, 5vw, 60px); display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+<h2 style="margin: 0; flex: 1 1 400px; font-weight: 800; font-size: 44px; line-height: 1.1">Ett litet brev med stora skålar.</h2>
+<form style="flex: 1 1 400px; min-width: 0; display: flex; flex-wrap: wrap; gap: 12px">
+<label for="mochi-email" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">E-postadress</label>
+<input id="mochi-email" type="email" placeholder="din@epost.se" style="flex: 1 1 240px; min-width: 0; padding: 17px 22px; border-radius: 999px; border: 0; font-size: 16px; font-family: inherit">
+<button type="submit" style="background: #4A3558; color: #FFFFFF; border: 0; padding: 17px 28px; border-radius: 999px; font-weight: 700; font-size: 16px; font-family: inherit; cursor: pointer">Prenumerera</button>
+</form>
+</div>
+</section>
+
+<footer style="max-width: 1240px; margin: 0 auto; padding: 24px 24px 56px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; font-size: 14px; font-weight: 500">
+<span style="font-weight: 800; font-size: 22px">Sake Aikokai</span>
+<span>[KONTAKT-E-POST] · Instagram · Facebook</span>
+<span>Njut av sake med måtta.</span>
+</footer>
+</div></script>
+<script src="dc-lite.js"></script>
+<script>
+class Component extends DCLogic {
+renderVals() {
+const fortunes = [
+{ kanji: '大吉', name: 'Daikichi – stor tur', tip: 'Idag passar en fruktig junmai ginjo, serverad sval.' },
+{ kanji: '吉', name: 'Kichi – tur', tip: 'Värm en junmai försiktigt och dela den med en vän.' },
+{ kanji: '中吉', name: 'Chukichi – lagom tur', tip: 'Prova något nytt: en grumlig, len nigori.' },
+{ kanji: '小吉', name: 'Shokichi – liten tur', tip: 'En torr honjozo gör kvällens middag godare.' },
+{ kanji: '末吉', name: 'Suekichi – tur längre fram', tip: 'Spara en fin flaska till helgen. Det blir värt väntan.' }
+];
+const today = Math.floor(Date.now() / 86400000);
+const drawn = !!(this.state && this.state.drawn);
+const pinks = ['#FFC8DD', '#FFFFFF', '#D7C8F5', '#FFC8DD'];
+const petals = [6, 17, 29, 41, 54, 66, 79, 90].map((l, i) => ({ left: l + '%', dur: (7 + (i % 4) * 1.5) + 's', delay: (i * 0.9) + 's', color: pinks[i % 4] }));
+return {
+drawn: drawn,
+notDrawn: !drawn,
+drawLabel: drawn ? 'Lotten är dragen' : 'Dra en lott',
+draw: () => this.setState({ drawn: true }),
+fortune: fortunes[today % fortunes.length],
+petals: petals,
+sparkles: [
+{ left: '12%', top: '14%', delay: '0s' }, { left: '82%', top: '18%', delay: '0.6s' }, { left: '74%', top: '52%', delay: '1.1s' }, { left: '18%', top: '48%', delay: '1.5s' }, { left: '48%', top: '8%', delay: '0.3s' }
+],
+events: [
+{ day: '12', month: 'Dec', kind: 'Provning', title: 'Vintersake & varm kan-zake', place: '[PLATS], Stockholm', bg: '#FFC8DD' },
+{ day: '18', month: 'Jan', kind: 'Middag', title: 'Nyårsträff med izakaya-meny', place: '[PLATS], Stockholm', bg: '#BDE6D3' },
+{ day: '06', month: 'Feb', kind: 'Kurs', title: 'Nybörjarkväll – sakens grunder', place: '[PLATS], Göteborg', bg: '#FFE9A8' },
+{ day: '14', month: 'Mar', kind: 'Träff', title: 'Hanami-picknick med sparkling sake', place: '[PLATS], Stockholm', bg: '#D7C8F5' }
+],
+news: [
+{ tag: 'Bryggerier', title: 'Årets första namazake har landat i Sverige', bg: '#FFC8DD' },
+{ tag: 'Guide', title: 'Junmai, ginjo, daiginjo – vad betyder etiketten?', bg: '#BDE6D3' },
+{ tag: 'Mat & sake', title: 'Sake till julbordet: fem kombinationer', bg: '#FFE9A8' }
+]
+};
+}
+}
+mountDC(Component);
+</script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>I · Koi – Sake Aikokai designförslag</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500;700;800&amp;family=Outfit:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FBF7EF}
+a{color:#24504A}a:hover{color:#A8432B}
+@keyframes koi-swim-r{0%{left:-22%}100%{left:108%}}
+@keyframes koi-swim-l{0%{left:108%}100%{left:-22%}}
+@keyframes koi-wag{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+@keyframes koi-ripple{0%{transform:scale(.2);opacity:.9}100%{transform:scale(1.6);opacity:0}}
+@keyframes koi-float{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-10px) rotate(1.5deg)}}
+@keyframes koi-pop{0%{transform:scale(.6);opacity:0}70%{transform:scale(1.05)}100%{transform:scale(1);opacity:1}}
+.koi-lift{transition:transform .25s ease}
+.koi-lift:hover{transform:translateY(-6px)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+<style>
+.dc-back{position:fixed;left:16px;bottom:16px;z-index:50;background:#111;color:#fff!important;text-decoration:none;font:600 14px/1 system-ui,sans-serif;padding:14px 18px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.dc-back:hover{background:#333;color:#fff!important}
+</style>
+</head>
+<body>
+<div id="root"><div style="font-family: Outfit, system-ui, sans-serif; color: #24504A; background: #FBF7EF; width: 100%">
+
+<header style="max-width: 1240px; margin: 0 auto; padding: 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
+<a href="#" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #24504A">
+<svg width="56" height="34" viewBox="0 0 120 70" aria-hidden="true" style="animation: koi-wag 1.6s ease-in-out infinite"><path d="M94 35 L116 16 Q112 35 116 54 Z" fill="#FFB59E" stroke="#24504A" stroke-width="4" stroke-linejoin="round"></path><ellipse cx="54" cy="35" rx="46" ry="24" fill="#FFFFFF" stroke="#24504A" stroke-width="4"></ellipse><circle cx="62" cy="26" r="11" fill="#FFB59E"></circle><circle cx="24" cy="30" r="4" fill="#24504A"></circle></svg>
+<span style="font-family: Grandstander, sans-serif; font-weight: 800; font-size: 28px">Sake Aikokai</span>
+</a>
+<nav aria-label="Huvudmeny" style="display: flex; flex-wrap: wrap; align-items: center; gap: 22px; font-size: 16px; font-weight: 700">
+<a href="#nyheter" style="text-decoration: none">Nyheter</a>
+<a href="#evenemang" style="text-decoration: none">Evenemang</a>
+<a href="#fraga" style="text-decoration: none">Dagens fråga</a>
+<a href="#" style="text-decoration: none; background: #24504A; color: #FFFFFF; padding: 12px 22px; border-radius: 999px">Bli medlem</a>
+</nav>
+</header>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 16px 24px 72px">
+<div style="position: relative; overflow: hidden; background: #CFEDE6; border-radius: 56px; padding: clamp(28px, 5vw, 64px); min-height: 520px; box-sizing: border-box; display: flex; align-items: center">
+<div aria-hidden="true" style="position: absolute; inset: 0">
+
+<span style="position: absolute; left: 62%; top: 20%; width: 120px; height: 120px; border-radius: 50%; border: 3px solid #FFFFFF; animation: koi-ripple 4s ease-out 0s infinite"></span>
+
+<span style="position: absolute; left: 80%; top: 55%; width: 120px; height: 120px; border-radius: 50%; border: 3px solid #FFFFFF; animation: koi-ripple 4s ease-out 1.3s infinite"></span>
+
+<span style="position: absolute; left: 48%; top: 70%; width: 120px; height: 120px; border-radius: 50%; border: 3px solid #FFFFFF; animation: koi-ripple 4s ease-out 2.4s infinite"></span>
+
+<span style="position: absolute; left: 88%; top: 10%; width: 120px; height: 120px; border-radius: 50%; border: 3px solid #FFFFFF; animation: koi-ripple 4s ease-out 3.1s infinite"></span>
+
+
+<div style="position: absolute; top: 10%; left: -22%; animation: koi-swim-l 26s linear -4s infinite">
+<svg width="150" viewBox="0 0 120 70" style="display: block; transform: scaleX(1)"><g style="transform-origin: 60px 35px; animation: koi-wag 1.2s ease-in-out infinite"><path d="M94 35 L116 14 Q111 35 116 56 Z" fill="#FFB59E" stroke="#24504A" stroke-width="3.5" stroke-linejoin="round"></path><ellipse cx="54" cy="35" rx="46" ry="23" fill="#FFFFFF" stroke="#24504A" stroke-width="3.5"></ellipse><circle cx="66" cy="27" r="11" fill="#FFB59E"></circle><circle cx="44" cy="44" r="7" fill="#FFB59E"></circle><circle cx="22" cy="30" r="4" fill="#24504A"></circle><path d="M14 40 Q18 44 23 41" fill="none" stroke="#24504A" stroke-width="3" stroke-linecap="round"></path></g></svg>
+</div>
+
+<div style="position: absolute; top: 38%; left: -22%; animation: koi-swim-r 32s linear -18s infinite">
+<svg width="120" viewBox="0 0 120 70" style="display: block; transform: scaleX(-1)"><g style="transform-origin: 60px 35px; animation: koi-wag 1.2s ease-in-out infinite"><path d="M94 35 L116 14 Q111 35 116 56 Z" fill="#FFB59E" stroke="#24504A" stroke-width="3.5" stroke-linejoin="round"></path><ellipse cx="54" cy="35" rx="46" ry="23" fill="#FFB59E" stroke="#24504A" stroke-width="3.5"></ellipse><circle cx="66" cy="27" r="11" fill="#FFFFFF"></circle><circle cx="44" cy="44" r="7" fill="#FFFFFF"></circle><circle cx="22" cy="30" r="4" fill="#24504A"></circle><path d="M14 40 Q18 44 23 41" fill="none" stroke="#24504A" stroke-width="3" stroke-linecap="round"></path></g></svg>
+</div>
+
+<div style="position: absolute; top: 66%; left: -22%; animation: koi-swim-l 38s linear -22s infinite">
+<svg width="170" viewBox="0 0 120 70" style="display: block; transform: scaleX(1)"><g style="transform-origin: 60px 35px; animation: koi-wag 1.2s ease-in-out infinite"><path d="M94 35 L116 14 Q111 35 116 56 Z" fill="#FFE6A6" stroke="#24504A" stroke-width="3.5" stroke-linejoin="round"></path><ellipse cx="54" cy="35" rx="46" ry="23" fill="#FFFFFF" stroke="#24504A" stroke-width="3.5"></ellipse><circle cx="66" cy="27" r="11" fill="#FFE6A6"></circle><circle cx="44" cy="44" r="7" fill="#FFE6A6"></circle><circle cx="22" cy="30" r="4" fill="#24504A"></circle><path d="M14 40 Q18 44 23 41" fill="none" stroke="#24504A" stroke-width="3" stroke-linecap="round"></path></g></svg>
+</div>
+
+<div style="position: absolute; top: 82%; left: -22%; animation: koi-swim-r 24s linear -9s infinite">
+<svg width="100" viewBox="0 0 120 70" style="display: block; transform: scaleX(-1)"><g style="transform-origin: 60px 35px; animation: koi-wag 1.2s ease-in-out infinite"><path d="M94 35 L116 14 Q111 35 116 56 Z" fill="#FFC9D9" stroke="#24504A" stroke-width="3.5" stroke-linejoin="round"></path><ellipse cx="54" cy="35" rx="46" ry="23" fill="#FFC9D9" stroke="#24504A" stroke-width="3.5"></ellipse><circle cx="66" cy="27" r="11" fill="#FFFFFF"></circle><circle cx="44" cy="44" r="7" fill="#FFFFFF"></circle><circle cx="22" cy="30" r="4" fill="#24504A"></circle><path d="M14 40 Q18 44 23 41" fill="none" stroke="#24504A" stroke-width="3" stroke-linecap="round"></path></g></svg>
+</div>
+
+<svg width="130" height="110" viewBox="0 0 130 110" style="position: absolute; right: 6%; bottom: 8%; animation: koi-float 5s ease-in-out infinite"><path d="M65 55 L65 10 A45 45 0 1 1 28 30 Z" fill="#BFE3B4" stroke="#24504A" stroke-width="3.5" stroke-linejoin="round"></path><path d="M78 58 Q70 38 82 28 Q94 38 86 58 Z" fill="#FFC9D9" stroke="#24504A" stroke-width="3"></path><path d="M66 62 Q52 50 58 36 Q74 42 78 60 Z" fill="#FFC9D9" stroke="#24504A" stroke-width="3"></path><path d="M98 62 Q112 50 106 36 Q90 42 86 60 Z" fill="#FFC9D9" stroke="#24504A" stroke-width="3"></path></svg>
+<svg width="90" height="80" viewBox="0 0 130 110" style="position: absolute; right: 30%; top: 8%; animation: koi-float 6s ease-in-out -2s infinite"><path d="M65 55 L65 10 A45 45 0 1 1 28 30 Z" fill="#BFE3B4" stroke="#24504A" stroke-width="4" stroke-linejoin="round"></path></svg>
+</div>
+<div style="position: relative; background: #FBF7EF; border-radius: 40px; padding: clamp(24px, 4vw, 48px); max-width: 600px; display: flex; flex-direction: column; gap: 22px">
+<span style="align-self: flex-start; background: #FFE6A6; border-radius: 999px; padding: 8px 18px; font-weight: 700; font-size: 15px">Välkommen till dammen</span>
+<h1 style="margin: 0; font-family: Grandstander, sans-serif; font-weight: 800; font-size: clamp(44px, 6vw, 80px); line-height: 1.0">Simma lugnt. Skåla ofta.</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.6">En lugn liten plats för sakeälskare. Nyheter, träffar och en ny sakefråga varje dag – titta förbi och mata din nyfikenhet.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#fraga" class="koi-lift" style="background: #24504A; color: #FFFFFF; text-decoration: none; padding: 17px 28px; border-radius: 999px; font-weight: 700; font-size: 17px">Svara på dagens fråga</a>
+<a href="#evenemang" class="koi-lift" style="background: #FFC9D9; color: #24504A; text-decoration: none; padding: 17px 28px; border-radius: 999px; font-weight: 700; font-size: 17px">Kommande träffar</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="fraga" style="max-width: 1240px; margin: 0 auto; padding: 0 24px 72px">
+<div style="background: #FFE6A6; border-radius: 48px; padding: clamp(28px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<span style="font-weight: 700; font-size: 14px; letter-spacing: 2px; text-transform: uppercase">Dagens sakefråga · ny varje dag</span>
+<h2 style="margin: 0; font-family: Grandstander, sans-serif; font-weight: 800; font-size: 44px; line-height: 1.1">Vad betyder ”junmai”?</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.5">Svara rätt flera dagar i rad och bygg din svit.</p>
+
+</div>
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+
+<button type="button" class="koi-lift" style="text-align: left; background: #FBF7EF; color: #24504A; border: 3px solid #FBF7EF; border-radius: 24px; padding: 18px 22px; font-size: 18px; font-weight: 700; font-family: inherit; cursor: pointer; min-height: 60px; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span>Kall sake</span><span></span>
+</button>
+
+<button type="button" class="koi-lift" style="text-align: left; background: #FBF7EF; color: #24504A; border: 3px solid #FBF7EF; border-radius: 24px; padding: 18px 22px; font-size: 18px; font-weight: 700; font-family: inherit; cursor: pointer; min-height: 60px; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span>Rent ris</span><span></span>
+</button>
+
+<button type="button" class="koi-lift" style="text-align: left; background: #FBF7EF; color: #24504A; border: 3px solid #FBF7EF; border-radius: 24px; padding: 18px 22px; font-size: 18px; font-weight: 700; font-family: inherit; cursor: pointer; min-height: 60px; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span>Lagrad länge</span><span></span>
+</button>
+
+</div>
+</div>
+</section>
+
+<section id="evenemang" style="max-width: 1240px; margin: 0 auto; padding: 16px 24px 56px">
+<h2 style="margin: 0 0 12px; font-family: Grandstander, sans-serif; font-weight: 800; font-size: 54px">Hoppa till nästa näckrosblad</h2>
+<p style="margin: 0 0 36px; font-size: 18px">Våra kommande träffar – alla är välkomna.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 28px; justify-content: center">
+
+<a href="#" style="flex: 0 1 270px; aspect-ratio: 1; min-width: 240px; background: #BFE3B4; color: #24504A; text-decoration: none; border-radius: 50%; padding: 36px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 6px; animation: koi-float 5s ease-in-out 0s infinite">
+<span style="font-family: Grandstander, sans-serif; font-weight: 800; font-size: 44px; line-height: 1">12</span>
+<span style="font-weight: 700; font-size: 12px; letter-spacing: 2px; text-transform: uppercase">Dec · Provning</span>
+<span style="font-family: Grandstander, sans-serif; font-weight: 700; font-size: 20px; line-height: 1.15">Vintersake &amp; varm kan-zake</span>
+<span style="font-size: 14px">[PLATS], Stockholm</span>
+</a>
+
+<a href="#" style="flex: 0 1 270px; aspect-ratio: 1; min-width: 240px; background: #CFEDE6; color: #24504A; text-decoration: none; border-radius: 50%; padding: 36px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 6px; animation: koi-float 6s ease-in-out -1.5s infinite">
+<span style="font-family: Grandstander, sans-serif; font-weight: 800; font-size: 44px; line-height: 1">18</span>
+<span style="font-weight: 700; font-size: 12px; letter-spacing: 2px; text-transform: uppercase">Jan · Middag</span>
+<span style="font-family: Grandstander, sans-serif; font-weight: 700; font-size: 20px; line-height: 1.15">Nyårsträff med izakaya-meny</span>
+<span style="font-size: 14px">[PLATS], Stockholm</span>
+</a>
+
+<a href="#" style="flex: 0 1 270px; aspect-ratio: 1; min-width: 240px; background: #BFE3B4; color: #24504A; text-decoration: none; border-radius: 50%; padding: 36px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 6px; animation: koi-float 5.5s ease-in-out -3s infinite">
+<span style="font-family: Grandstander, sans-serif; font-weight: 800; font-size: 44px; line-height: 1">06</span>
+<span style="font-weight: 700; font-size: 12px; letter-spacing: 2px; text-transform: uppercase">Feb · Kurs</span>
+<span style="font-family: Grandstander, sans-serif; font-weight: 700; font-size: 20px; line-height: 1.15">Nybörjarkväll – sakens grunder</span>
+<span style="font-size: 14px">[PLATS], Göteborg</span>
+</a>
+
+<a href="#" style="flex: 0 1 270px; aspect-ratio: 1; min-width: 240px; background: #CFEDE6; color: #24504A; text-decoration: none; border-radius: 50%; padding: 36px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 6px; animation: koi-float 6.5s ease-in-out -2s infinite">
+<span style="font-family: Grandstander, sans-serif; font-weight: 800; font-size: 44px; line-height: 1">14</span>
+<span style="font-weight: 700; font-size: 12px; letter-spacing: 2px; text-transform: uppercase">Mar · Träff</span>
+<span style="font-family: Grandstander, sans-serif; font-weight: 700; font-size: 20px; line-height: 1.15">Hanami-picknick med sparkling sake</span>
+<span style="font-size: 14px">[PLATS], Stockholm</span>
+</a>
+
+</div>
+</section>
+
+<section id="nyheter" style="max-width: 1240px; margin: 0 auto; padding: 40px 24px 88px">
+<h2 style="margin: 0 0 36px; font-family: Grandstander, sans-serif; font-weight: 800; font-size: 54px">Nytt i dammen</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+
+<article class="koi-lift" style="flex: 1 1 330px; min-width: 0; background: #FFFFFF; border-radius: 40px; overflow: hidden; display: flex; flex-direction: column">
+<div role="img" aria-label="Bildplats" style="height: 220px; background: #FFC9D9; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box; font-weight: 700; font-size: 14px">[BILD]</div>
+<div style="padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<span style="align-self: flex-start; background: #FFC9D9; border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 700">Bryggerier</span>
+<h3 style="margin: 0; font-family: Grandstander, sans-serif; font-weight: 700; font-size: 25px; line-height: 1.2">Årets första namazake har landat i Sverige</h3>
+</div>
+</article>
+
+<article class="koi-lift" style="flex: 1 1 330px; min-width: 0; background: #FFFFFF; border-radius: 40px; overflow: hidden; display: flex; flex-direction: column">
+<div role="img" aria-label="Bildplats" style="height: 220px; background: #CFEDE6; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box; font-weight: 700; font-size: 14px">[BILD]</div>
+<div style="padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<span style="align-self: flex-start; background: #CFEDE6; border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 700">Guide</span>
+<h3 style="margin: 0; font-family: Grandstander, sans-serif; font-weight: 700; font-size: 25px; line-height: 1.2">Junmai, ginjo, daiginjo – vad betyder etiketten?</h3>
+</div>
+</article>
+
+<article class="koi-lift" style="flex: 1 1 330px; min-width: 0; background: #FFFFFF; border-radius: 40px; overflow: hidden; display: flex; flex-direction: column">
+<div role="img" aria-label="Bildplats" style="height: 220px; background: #FFE6A6; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box; font-weight: 700; font-size: 14px">[BILD]</div>
+<div style="padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<span style="align-self: flex-start; background: #FFE6A6; border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 700">Mat &amp; sake</span>
+<h3 style="margin: 0; font-family: Grandstander, sans-serif; font-weight: 700; font-size: 25px; line-height: 1.2">Sake till julbordet: fem kombinationer</h3>
+</div>
+</article>
+
+</div>
+</section>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 0 24px 72px">
+<div style="background: #FFC9D9; border-radius: 48px; padding: clamp(28px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+<h2 style="margin: 0; flex: 1 1 400px; font-family: Grandstander, sans-serif; font-weight: 800; font-size: 44px; line-height: 1.1">Låt nyheterna simma hem till dig.</h2>
+<form style="flex: 1 1 400px; min-width: 0; display: flex; flex-wrap: wrap; gap: 12px">
+<label for="koi-email" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">E-postadress</label>
+<input id="koi-email" type="email" placeholder="din@epost.se" style="flex: 1 1 240px; min-width: 0; padding: 17px 22px; border-radius: 999px; border: 0; font-size: 16px; font-family: inherit">
+<button type="submit" style="background: #24504A; color: #FFFFFF; border: 0; padding: 17px 28px; border-radius: 999px; font-weight: 700; font-size: 16px; font-family: inherit; cursor: pointer">Prenumerera</button>
+</form>
+</div>
+</section>
+
+<footer style="max-width: 1240px; margin: 0 auto; padding: 24px 24px 56px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; font-size: 14px; font-weight: 500">
+<span style="font-family: Grandstander, sans-serif; font-weight: 800; font-size: 22px">Sake Aikokai</span>
+<span>[KONTAKT-E-POST] · Instagram · Facebook</span>
+<span>Njut av sake med måtta.</span>
+</footer>
+</div></div>
+<a class="dc-back" href="./">← Alla förslag</a>
+<script type="text/x-template" id="tpl"><div style="font-family: Outfit, system-ui, sans-serif; color: #24504A; background: #FBF7EF; width: 100%">
+
+<header style="max-width: 1240px; margin: 0 auto; padding: 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
+<a href="#" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #24504A">
+<svg width="56" height="34" viewBox="0 0 120 70" aria-hidden="true" style="animation: koi-wag 1.6s ease-in-out infinite"><path d="M94 35 L116 16 Q112 35 116 54 Z" fill="#FFB59E" stroke="#24504A" stroke-width="4" stroke-linejoin="round"></path><ellipse cx="54" cy="35" rx="46" ry="24" fill="#FFFFFF" stroke="#24504A" stroke-width="4"></ellipse><circle cx="62" cy="26" r="11" fill="#FFB59E"></circle><circle cx="24" cy="30" r="4" fill="#24504A"></circle></svg>
+<span style="font-family: Grandstander, sans-serif; font-weight: 800; font-size: 28px">Sake Aikokai</span>
+</a>
+<nav aria-label="Huvudmeny" style="display: flex; flex-wrap: wrap; align-items: center; gap: 22px; font-size: 16px; font-weight: 700">
+<a href="#nyheter" style="text-decoration: none">Nyheter</a>
+<a href="#evenemang" style="text-decoration: none">Evenemang</a>
+<a href="#fraga" style="text-decoration: none">Dagens fråga</a>
+<a href="#" style="text-decoration: none; background: #24504A; color: #FFFFFF; padding: 12px 22px; border-radius: 999px">Bli medlem</a>
+</nav>
+</header>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 16px 24px 72px">
+<div style="position: relative; overflow: hidden; background: #CFEDE6; border-radius: 56px; padding: clamp(28px, 5vw, 64px); min-height: 520px; box-sizing: border-box; display: flex; align-items: center">
+<div aria-hidden="true" style="position: absolute; inset: 0">
+<sc-for list="{{ripples}}" as="r" hint-placeholder-count="4">
+<span style="position: absolute; left: {{r.left}}; top: {{r.top}}; width: 120px; height: 120px; border-radius: 50%; border: 3px solid #FFFFFF; animation: koi-ripple 4s ease-out {{r.delay}} infinite"></span>
+</sc-for>
+<sc-for list="{{fish}}" as="f" hint-placeholder-count="4">
+<div style="position: absolute; top: {{f.top}}; left: -22%; animation: {{f.anim}} {{f.dur}} linear {{f.delay}} infinite">
+<svg width="{{f.w}}" viewBox="0 0 120 70" style="display: block; transform: scaleX({{f.flip}})"><g style="transform-origin: 60px 35px; animation: koi-wag 1.2s ease-in-out infinite"><path d="M94 35 L116 14 Q111 35 116 56 Z" fill="{{f.tail}}" stroke="#24504A" stroke-width="3.5" stroke-linejoin="round"></path><ellipse cx="54" cy="35" rx="46" ry="23" fill="{{f.body}}" stroke="#24504A" stroke-width="3.5"></ellipse><circle cx="66" cy="27" r="11" fill="{{f.spot}}"></circle><circle cx="44" cy="44" r="7" fill="{{f.spot}}"></circle><circle cx="22" cy="30" r="4" fill="#24504A"></circle><path d="M14 40 Q18 44 23 41" fill="none" stroke="#24504A" stroke-width="3" stroke-linecap="round"></path></g></svg>
+</div>
+</sc-for>
+<svg width="130" height="110" viewBox="0 0 130 110" style="position: absolute; right: 6%; bottom: 8%; animation: koi-float 5s ease-in-out infinite"><path d="M65 55 L65 10 A45 45 0 1 1 28 30 Z" fill="#BFE3B4" stroke="#24504A" stroke-width="3.5" stroke-linejoin="round"></path><path d="M78 58 Q70 38 82 28 Q94 38 86 58 Z" fill="#FFC9D9" stroke="#24504A" stroke-width="3"></path><path d="M66 62 Q52 50 58 36 Q74 42 78 60 Z" fill="#FFC9D9" stroke="#24504A" stroke-width="3"></path><path d="M98 62 Q112 50 106 36 Q90 42 86 60 Z" fill="#FFC9D9" stroke="#24504A" stroke-width="3"></path></svg>
+<svg width="90" height="80" viewBox="0 0 130 110" style="position: absolute; right: 30%; top: 8%; animation: koi-float 6s ease-in-out -2s infinite"><path d="M65 55 L65 10 A45 45 0 1 1 28 30 Z" fill="#BFE3B4" stroke="#24504A" stroke-width="4" stroke-linejoin="round"></path></svg>
+</div>
+<div style="position: relative; background: #FBF7EF; border-radius: 40px; padding: clamp(24px, 4vw, 48px); max-width: 600px; display: flex; flex-direction: column; gap: 22px">
+<span style="align-self: flex-start; background: #FFE6A6; border-radius: 999px; padding: 8px 18px; font-weight: 700; font-size: 15px">Välkommen till dammen</span>
+<h1 style="margin: 0; font-family: Grandstander, sans-serif; font-weight: 800; font-size: clamp(44px, 6vw, 80px); line-height: 1.0">Simma lugnt. Skåla ofta.</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.6">En lugn liten plats för sakeälskare. Nyheter, träffar och en ny sakefråga varje dag – titta förbi och mata din nyfikenhet.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#fraga" class="koi-lift" style="background: #24504A; color: #FFFFFF; text-decoration: none; padding: 17px 28px; border-radius: 999px; font-weight: 700; font-size: 17px">Svara på dagens fråga</a>
+<a href="#evenemang" class="koi-lift" style="background: #FFC9D9; color: #24504A; text-decoration: none; padding: 17px 28px; border-radius: 999px; font-weight: 700; font-size: 17px">Kommande träffar</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="fraga" style="max-width: 1240px; margin: 0 auto; padding: 0 24px 72px">
+<div style="background: #FFE6A6; border-radius: 48px; padding: clamp(28px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<span style="font-weight: 700; font-size: 14px; letter-spacing: 2px; text-transform: uppercase">Dagens sakefråga · ny varje dag</span>
+<h2 style="margin: 0; font-family: Grandstander, sans-serif; font-weight: 800; font-size: 44px; line-height: 1.1">Vad betyder ”junmai”?</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.5">Svara rätt flera dagar i rad och bygg din svit.</p>
+<sc-if value="{{answered}}" hint-placeholder-val="{{false}}">
+<div role="status" style="background: #FBF7EF; border-radius: 24px; padding: 20px 24px; display: flex; flex-direction: column; gap: 6px; animation: koi-pop .45s ease-out both">
+<span style="font-family: Grandstander, sans-serif; font-weight: 800; font-size: 24px">{{resultTitle}}</span>
+<span style="font-size: 16px; line-height: 1.5">Junmai betyder ”rent ris” – sake bryggd på bara ris, vatten, jäst och koji, utan tillsatt alkohol. Ny fråga imorgon!</span>
+</div>
+</sc-if>
+</div>
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<sc-for list="{{options}}" as="o" hint-placeholder-count="3">
+<button type="button" onClick="{{o.pick}}" class="koi-lift" style="text-align: left; background: {{o.bg}}; color: #24504A; border: 3px solid {{o.border}}; border-radius: 24px; padding: 18px 22px; font-size: 18px; font-weight: 700; font-family: inherit; cursor: pointer; min-height: 60px; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span>{{o.text}}</span><span>{{o.mark}}</span>
+</button>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section id="evenemang" style="max-width: 1240px; margin: 0 auto; padding: 16px 24px 56px">
+<h2 style="margin: 0 0 12px; font-family: Grandstander, sans-serif; font-weight: 800; font-size: 54px">Hoppa till nästa näckrosblad</h2>
+<p style="margin: 0 0 36px; font-size: 18px">Våra kommande träffar – alla är välkomna.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 28px; justify-content: center">
+<sc-for list="{{events}}" as="ev" hint-placeholder-count="4">
+<a href="#" style="flex: 0 1 270px; aspect-ratio: 1; min-width: 240px; background: {{ev.bg}}; color: #24504A; text-decoration: none; border-radius: 50%; padding: 36px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 6px; animation: koi-float {{ev.dur}} ease-in-out {{ev.delay}} infinite">
+<span style="font-family: Grandstander, sans-serif; font-weight: 800; font-size: 44px; line-height: 1">{{ev.day}}</span>
+<span style="font-weight: 700; font-size: 12px; letter-spacing: 2px; text-transform: uppercase">{{ev.month}} · {{ev.kind}}</span>
+<span style="font-family: Grandstander, sans-serif; font-weight: 700; font-size: 20px; line-height: 1.15">{{ev.title}}</span>
+<span style="font-size: 14px">{{ev.place}}</span>
+</a>
+</sc-for>
+</div>
+</section>
+
+<section id="nyheter" style="max-width: 1240px; margin: 0 auto; padding: 40px 24px 88px">
+<h2 style="margin: 0 0 36px; font-family: Grandstander, sans-serif; font-weight: 800; font-size: 54px">Nytt i dammen</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<sc-for list="{{news}}" as="n" hint-placeholder-count="3">
+<article class="koi-lift" style="flex: 1 1 330px; min-width: 0; background: #FFFFFF; border-radius: 40px; overflow: hidden; display: flex; flex-direction: column">
+<div role="img" aria-label="Bildplats" style="height: 220px; background: {{n.bg}}; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box; font-weight: 700; font-size: 14px">[BILD]</div>
+<div style="padding: 26px; display: flex; flex-direction: column; gap: 10px">
+<span style="align-self: flex-start; background: {{n.bg}}; border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 700">{{n.tag}}</span>
+<h3 style="margin: 0; font-family: Grandstander, sans-serif; font-weight: 700; font-size: 25px; line-height: 1.2">{{n.title}}</h3>
+</div>
+</article>
+</sc-for>
+</div>
+</section>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 0 24px 72px">
+<div style="background: #FFC9D9; border-radius: 48px; padding: clamp(28px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+<h2 style="margin: 0; flex: 1 1 400px; font-family: Grandstander, sans-serif; font-weight: 800; font-size: 44px; line-height: 1.1">Låt nyheterna simma hem till dig.</h2>
+<form style="flex: 1 1 400px; min-width: 0; display: flex; flex-wrap: wrap; gap: 12px">
+<label for="koi-email" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">E-postadress</label>
+<input id="koi-email" type="email" placeholder="din@epost.se" style="flex: 1 1 240px; min-width: 0; padding: 17px 22px; border-radius: 999px; border: 0; font-size: 16px; font-family: inherit">
+<button type="submit" style="background: #24504A; color: #FFFFFF; border: 0; padding: 17px 28px; border-radius: 999px; font-weight: 700; font-size: 16px; font-family: inherit; cursor: pointer">Prenumerera</button>
+</form>
+</div>
+</section>
+
+<footer style="max-width: 1240px; margin: 0 auto; padding: 24px 24px 56px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; font-size: 14px; font-weight: 500">
+<span style="font-family: Grandstander, sans-serif; font-weight: 800; font-size: 22px">Sake Aikokai</span>
+<span>[KONTAKT-E-POST] · Instagram · Facebook</span>
+<span>Njut av sake med måtta.</span>
+</footer>
+</div></script>
+<script src="dc-lite.js"></script>
+<script>
+class Component extends DCLogic {
+renderVals() {
+const picked = this.state ? this.state.picked : undefined;
+const answered = picked !== undefined && picked !== null;
+const raw = [
+{ id: 0, text: 'Kall sake', right: false },
+{ id: 1, text: 'Rent ris', right: true },
+{ id: 2, text: 'Lagrad länge', right: false }
+];
+const options = raw.map((o) => {
+let bg = '#FBF7EF', border = '#FBF7EF', mark = '';
+if (answered && o.right) { bg = '#BFE3B4'; border = '#24504A'; mark = 'Rätt'; }
+else if (answered && picked === o.id) { bg = '#FFC9D9'; border = '#24504A'; mark = 'Inte riktigt'; }
+return { text: o.text, bg: bg, border: border, mark: mark, pick: () => this.setState({ picked: o.id }) };
+});
+return {
+answered: answered,
+resultTitle: picked === 1 ? 'Rätt svar!' : 'Nästan!',
+options: options,
+ripples: [
+{ left: '62%', top: '20%', delay: '0s' }, { left: '80%', top: '55%', delay: '1.3s' }, { left: '48%', top: '70%', delay: '2.4s' }, { left: '88%', top: '10%', delay: '3.1s' }
+],
+fish: [
+{ top: '10%', w: 150, anim: 'koi-swim-l', flip: 1, dur: '26s', delay: '-4s', body: '#FFFFFF', tail: '#FFB59E', spot: '#FFB59E' },
+{ top: '38%', w: 120, anim: 'koi-swim-r', flip: -1, dur: '32s', delay: '-18s', body: '#FFB59E', tail: '#FFB59E', spot: '#FFFFFF' },
+{ top: '66%', w: 170, anim: 'koi-swim-l', flip: 1, dur: '38s', delay: '-22s', body: '#FFFFFF', tail: '#FFE6A6', spot: '#FFE6A6' },
+{ top: '82%', w: 100, anim: 'koi-swim-r', flip: -1, dur: '24s', delay: '-9s', body: '#FFC9D9', tail: '#FFC9D9', spot: '#FFFFFF' }
+],
+events: [
+{ day: '12', month: 'Dec', kind: 'Provning', title: 'Vintersake & varm kan-zake', place: '[PLATS], Stockholm', bg: '#BFE3B4', dur: '5s', delay: '0s' },
+{ day: '18', month: 'Jan', kind: 'Middag', title: 'Nyårsträff med izakaya-meny', place: '[PLATS], Stockholm', bg: '#CFEDE6', dur: '6s', delay: '-1.5s' },
+{ day: '06', month: 'Feb', kind: 'Kurs', title: 'Nybörjarkväll – sakens grunder', place: '[PLATS], Göteborg', bg: '#BFE3B4', dur: '5.5s', delay: '-3s' },
+{ day: '14', month: 'Mar', kind: 'Träff', title: 'Hanami-picknick med sparkling sake', place: '[PLATS], Stockholm', bg: '#CFEDE6', dur: '6.5s', delay: '-2s' }
+],
+news: [
+{ tag: 'Bryggerier', title: 'Årets första namazake har landat i Sverige', bg: '#FFC9D9' },
+{ tag: 'Guide', title: 'Junmai, ginjo, daiginjo – vad betyder etiketten?', bg: '#CFEDE6' },
+{ tag: 'Mat & sake', title: 'Sake till julbordet: fem kombinationer', bg: '#FFE6A6' }
+]
+};
+}
+}
+mountDC(Component);
+</script>
+</body>
+</html>
